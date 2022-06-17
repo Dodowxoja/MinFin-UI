@@ -41,9 +41,13 @@ class _MyHomeViewState extends State<MyHomeView> {
             return ListView.builder(
               itemBuilder: (_, __) {
                 return ListTile(
-                  leading: const CircleAvatar(
+                  leading: CircleAvatar(
                     radius: 25,
                     backgroundColor: Colors.black,
+                    child: Image.asset(
+                      'assets/images/image.jpg',
+                      fit: BoxFit.cover,
+                    ),
                   ),
                   title: Text(snap.data![__].name.toString()),
                   subtitle:
